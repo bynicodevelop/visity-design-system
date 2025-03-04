@@ -14,8 +14,8 @@
       window.FRAMEWORK_OPTIONS = {};
       window.CHANNEL_OPTIONS = {};
       window.FEATURES = {"argTypeTargetsV7":true,"legacyDecoratorFileOrder":false,"disallowImplicitActionsInRenderV8":true};
-      window.STORIES = [{"titlePrefix":"","directory":"./src","files":"**/*.mdx","importPathMatcher":"^\\.[\\\\/](?:src(?:\\/(?!\\.)(?:(?:(?!(?:^|\\/)\\.).)*?)\\/|\\/|$)(?!\\.)(?=.)[^/]*?\\.mdx)$"},{"titlePrefix":"","directory":"./src","files":"**/*.stories.@(js|jsx|ts|tsx)","importPathMatcher":"^\\.[\\\\/](?:src(?:\\/(?!\\.)(?:(?:(?!(?:^|\\/)\\.).)*?)\\/|\\/|$)(?!\\.)(?=.)[^/]*?\\.stories\\.(js|jsx|ts|tsx))$"}];
-      window.DOCS_OPTIONS = {"defaultName":"Docs","autodocs":"tag"};
+      window.STORIES = [{"titlePrefix":"","directory":"./components","files":"**/*.stories.@(js|jsx|ts|tsx)","importPathMatcher":"^\\.[\\\\/](?:components(?:\\/(?!\\.)(?:(?:(?!(?:^|\\/)\\.).)*?)\\/|\\/|$)(?!\\.)(?=.)[^/]*?\\.stories\\.(js|jsx|ts|tsx))$"}];
+      window.DOCS_OPTIONS = {"autodocs":"tag"};
       window.TAGS_OPTIONS = {"dev-only":{"excludeFromDocsStories":true},"docs-only":{"excludeFromSidebar":true},"test-only":{"excludeFromSidebar":true,"excludeFromDocsStories":true}};
 
       
@@ -476,8 +476,19 @@
     console.warn('unable to connect to top frame for connecting dev tools');
   }
 </script>
+<script>
+  // Récupération de l'URL de base depuis les variables d'environnement si disponible
+  window.STORYBOOK_BASE_PATH = window.STORYBOOK_BASE_PATH || '/visity-design-system';
+</script>
+<link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+<style>
+  /* Styles supplémentaires pour la prévisualisation */
+  body {
+    font-family: 'Arial', sans-serif;
+  }
+</style>
 
-    <script type="module" crossorigin src="./_nuxt/Dw9M0k2F.js"></script>
+    <script type="module" crossorigin src="./_nuxt/CJWNgz2L.js"></script>
   </head>
 
   <body>
