@@ -1,0 +1,1 @@
+import{e as a}from"./DiCQvqgN.js";import{r as n}from"./DYHvSiQ9.js";const f=a("alertStore",()=>{const e=n([]);return{alerts:e,addAlert:(r,t,o="info",l=null)=>{e.value.push({id:Date.now(),title:r,message:t,type:o,duration:l??3e3})},removeAlert:r=>{e.value=e.value.filter(t=>t.id!==r)}}});export{f as u};
